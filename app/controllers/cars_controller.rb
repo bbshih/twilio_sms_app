@@ -25,6 +25,9 @@ class CarsController < ApplicationController
     @car.contacts.build
   end
 
+  def faq
+  end
+
   def send_alert
     if params["Body"]
       message_body = params["Body"]

@@ -3,6 +3,8 @@ TwilioSmsApp::Application.routes.draw do
 
   post "sms" => "cars#send_alert"
 
+  get "/faq" => "cars#faq"
+
   resources :cars, :contacts
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
